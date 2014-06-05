@@ -9,7 +9,6 @@
                     android:minResizeHeight="40dp"
                     android:minResizeWidth="40dp"
 
-                    android:previewImage="@drawable/preview"
                     android:resizeMode="horizontal|vertical"
                     android:initialKeyguardLayout="@layout/widget"
                     android:widgetCategory="home_screen|keyguard"

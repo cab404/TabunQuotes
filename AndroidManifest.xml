@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools" package="com.cab404.tabun.quotes"
-          android:versionCode="2"
-          android:versionName="0.0.2a"
+          android:versionCode="4"
+          android:versionName="0.0.4a"
         >
 
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="19" tools:ignore="UnusedAttribute"/>
@@ -21,6 +21,12 @@
                     android:name="android.appwidget.provider"
                     android:resource="@xml/widget_data"
                     />
+        </receiver>
+
+        <receiver android:name=".Updater">
+            <intent-filter>
+                <action android:name="com.cab404.tabun.quotes.UPDATE"/>
+            </intent-filter>
         </receiver>
 
 
