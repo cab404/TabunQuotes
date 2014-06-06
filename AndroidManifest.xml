@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools" package="com.cab404.tabun.quotes"
-          android:versionCode="4"
-          android:versionName="0.0.4a"
+          android:versionCode="5"
+          android:versionName="0.1.0b"
         >
 
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="19" tools:ignore="UnusedAttribute"/>
@@ -15,6 +15,7 @@
 
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
             </intent-filter>
 
             <meta-data
@@ -23,13 +24,14 @@
                     />
         </receiver>
 
-        <receiver android:name=".Updater">
+        <receiver android:name=".Updater"/>
+
+
+        <activity android:name=".PreferencesActivity">
             <intent-filter>
-                <action android:name="com.cab404.tabun.quotes.UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
-        </receiver>
-
-
+        </activity>
     </application>
 
 </manifest>

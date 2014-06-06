@@ -5,6 +5,7 @@
                     android:minHeight="100dp"
                     android:updatePeriodMillis="0"
                     android:initialLayout="@layout/widget"
+                    android:configure="com.cab404.tabun.quotes.PreferencesActivity"
 
                     android:minResizeHeight="40dp"
                     android:minResizeWidth="40dp"
